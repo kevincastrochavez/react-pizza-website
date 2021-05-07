@@ -1,7 +1,16 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar/Navbar";
+import { GlobalStyles } from "./globalStyles.styles";
 
 function App() {
-  return <div className="App">Pizza Website</div>;
+  return (
+    <Router>
+      <GlobalStyles />
+      <Navbar />
+    </Router>
+  );
 }
 
 export default App;
